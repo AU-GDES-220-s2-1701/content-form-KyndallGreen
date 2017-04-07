@@ -5,25 +5,51 @@
 	and other elements used for layout. */
 
 /*
-div, main, article, section, aside, 
+div, main, article, section, aside,
 hgroup, header, footer, address, nav {
 	border: 1px solid rgba(255,0,0,0.15) !important;
-	background: rgba(255,0,0,0.05) !important;		
+	background: rgba(255,0,0,0.05) !important;
 }
-*/
-
-
 
 /*	Generally, you will only want one container element in
 	the document, wrapping around the main content area. */
 .container {
-	margin-top: 1em;
 	margin-right: auto;
 	margin-bottom: 1em;
 	margin-left: auto;
 	width: 90%;
-	max-width: 1200px;
+	max-width: 800px;
 	padding: 2em;
-	border: 1px solid #eee;
 }
 
+.global-nav ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 3em;
+}
+
+.global-nav li {
+	float: left;
+	width: 16.667%;
+	/*margin-right: .05em;*/
+}
+
+.global-nav a {
+	color: #355C7D;
+	text-decoration: none;
+	background-color: #b1cdd1;
+	padding: 7px;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	border-left: 1px #fff solid;
+}
+
+.global-nav li:first-child a {
+	border-left: none;
+}
+
+.global-nav li a:hover {
+	background-color: #555;
+	color: white;
+}
